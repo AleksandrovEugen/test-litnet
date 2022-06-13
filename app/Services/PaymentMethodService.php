@@ -28,10 +28,10 @@ class PaymentMethodService
             ->orderBy('id') // TODO: replace to sort_order
             ->get();
 
-        $rulesBuilder = new RulesBuilder();
+        $rulesBuilder = new RulesBuilder(); // TODO: Перенести в конструктор, взять из IoC
         $rulesBuilder->build(config('rules'));
 
-        $paymentMethodFilter = new PaymentMethodFilter($rulesBuilder, $paymentMethods);
+        $paymentMethodFilter = new PaymentMethodFilter($rulesBuilder, $paymentMethods); // TODO: Перенести в конструктор, взять из IoC
 
         return $paymentMethodFilter->filter($order);
     }
