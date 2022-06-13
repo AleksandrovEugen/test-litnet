@@ -3,12 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\PaymentMethodRequest;
-use App\Models\Country;
-use App\Models\Lang;
-use App\Models\ProductType;
 use App\Services\PaymentMethodService;
 use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
 
 class ApiPaymentMethodsController extends Controller
 {
