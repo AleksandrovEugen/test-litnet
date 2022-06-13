@@ -21,7 +21,7 @@ class Rule
         $this->filters->push($filter);
     }
 
-    public function checkCondition(Order $order)
+    public function checkCondition(Order $order): bool
     {
         $matched = false;
         foreach ($this->filters as $filter) {

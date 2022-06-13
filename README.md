@@ -16,6 +16,6 @@ https://github.com/Litnet-Ltd/php-test
 
 `ListFilter`, `ValueFilter` - для проверки конкретного типа правил
 
-`PaymentMethodFilter` - фильрует набор методов оплаты по заданным правилам
+`PaymentMethodFilter` - фильтрует набор методов оплаты по заданным правилам
 
 

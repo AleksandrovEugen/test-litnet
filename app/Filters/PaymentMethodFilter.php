@@ -14,7 +14,7 @@ class PaymentMethodFilter
     {
     }
 
-    public function filter(Order $order)
+    public function filter(Order $order): Collection
     {
         // Первым делом найти исключающие другие правила
         $hideOthersRules = $this->rulesBuilder->getHideOthersRules();
