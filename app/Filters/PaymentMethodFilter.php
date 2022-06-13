@@ -8,7 +8,7 @@ use Illuminate\Support\Collection;
 class PaymentMethodFilter
 {
     public function __construct(
-        protected RulesBuilder $rulesBuilder,
+        protected RulesBuilderInterface $rulesBuilder,
         protected Collection $paymentMethods,
     )
     {

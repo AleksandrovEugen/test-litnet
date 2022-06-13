@@ -2,7 +2,7 @@
 
 namespace App\Filters;
 
-class RulesBuilder
+class RulesBuilder implements RulesBuilderInterface
 {
     const FILTER_TYPE_LIST  = 'list';
     const FILTER_TYPE_VALUE = 'value';
