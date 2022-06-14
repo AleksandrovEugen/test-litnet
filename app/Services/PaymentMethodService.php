@@ -21,7 +21,7 @@ class PaymentMethodService
     {
         $order = new Order($productType, $amount, $lang, $countryCode, $userOs);
 
-        $paymentGateways = PaymentGateway::enabled()->get();
+        $paymentGateways = PaymentGateway::enabled()->get(); // TODO: Перенести в репозиторий и брать из конструктора
         $paymentMethods = PaymentMethod::enabled()
             ->whereBelongsTo($paymentGateways)
             ->orderBy('id') // TODO: replace to sort_order
